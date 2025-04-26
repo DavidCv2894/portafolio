@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>David Cervantes - Desarrollador Web </title>
+    <link rel="icon" href="img/logo.png" type="image/png">
+</head>
+
+<body>
+    <header id="header">
+        <nav>
+            <div class="nav__logo">PDC <img src="img/logo.png" alt="" class="nav__logo--img"></div>
+            <i class="fa-solid fa-bars nav__list__movil__button" id="nav__list__button__movil"></i>
+            <ul class="nav__list" id="nav__list__movil">
+                <li class="nav__list__li">
+                    <a href="#my__info" class="nav__list__li--link"><i class="fa-solid fa-user"></i>Sobre mi</a>
+                </li>
+                <li class="nav__list__li">
+                    <a href="#skills" class="nav__list__li--link"><i class="fa-solid fa-screwdriver-wrench"></i> Habilidades</a>
+                </li>
+                <li class="nav__list__li">
+                    <a href="#" class="nav__list__li--link"><i class="fa-solid fa-folder"></i>Proyectos</a>
+                </li>
+                <li class="nav__list__li">
+                    <a href="#" class="nav__list__li--link"><i class="fa-solid fa-envelope"></i>Contacto</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+        <main id="my__info" >
+            <a href="#header" class="button__home"><i class='bx bxs-up-arrow-circle '></i></a>
+            <div class="main__intro" >
+                <section class="main__intro__titles">
+                <h1 class="main__intro__titles--title"><img src="img/logo.png"class="main__intro__titles--title-logo" alt=""><p class="initial">P</p>ablo  <p class="initial">D</p>avid  <p class="initial">C</p>ervantes</h1>
+                <h1 class="main__intro__titles--title title--2">Desarrollador Web </h1>
+                <div class="main__intro__titles__socials">
+                    <i class="fa-brands fa-facebook icons"></i>
+                    <i class="fa-brands fa-whatsapp icons"></i>
+                    <i class="fa-brands fa-x-twitter icons"></i>
+                </div>
+                <a href="#" class="main__intro__titles--button">Descargar Cv</a>
+                </section>
+                <section class="main__intro__info">
+                    <h1>Sobre mi</h1>
+                    <p>
+                        ¡Hola! Soy un programador backend de 31 años, especializado en Python y Django.
+                        Aunque mi enfoque está en el desarrollo backend, también cuento con los conocimientos de frontend necesarios para construir interfaces modernas, funcionales y completamente responsive, utilizando HTML, CSS y JavaScript. 
+                    </p>
+                    <p>Me dedico a desarrollar aplicaciones web funcionales, seguras y escalables. Entre mis proyectos más destacados se encuentran sistemas de e-commerce con autenticación de usuarios, carritos de compras y paneles de administración personalizados.</p>
+                    <p class="main__intro__info--p" >
+                        Trabajo con bases de datos MySQL y domino operaciones clave como creación, edición, eliminación y mantenimiento de tablas y datos.
+                    </p>
+                    <p class="main__intro__info--p">
+                        Cuento con un título terciario en Análisis de Sistemas con orientación a empresas (Facundo D. Zuviría), y certificados en Reparación de PC y Secretariado Nivel Medio (Fundación Roberto Romero). 
+                    </p>
+                    <p class="main__intro__info--p">
+                        Me apasiona seguir aprendiendo, crear soluciones útiles y enfrentar nuevos desafíos en el mundo del desarrollo web.
+                    </p>
+                    <button class="main__intro__info--button" id="button__text">Ver mas</button>
+                </section>
+            </div>
+
+            <!-- //// SKILLS CONTAINER ////-->
+            <div class="main__skills" id="skills" >
+                <section class="main__skills__header">
+                    <h1 class="main__skills__header--title" >Mis habilidades </h1>
+                </section>
+                <section class="main__skills__body skills__container">
+                    <div class="skills__container__skill skill">
+                        <i class="fa-brands fa-html5 skill--icon html"></i>
+                        <h3 class="skill--title ">HTML5</h3>
+                        <p class="skill--description">Estructuro sitios web semánticos, claros y bien organizados, facilitando la navegación y optimización para motores de búsqueda.</p>
+                    </div>
+                    <div class="skills__container__skill skill">
+                        <i class="fa-brands fa-css3-alt skill--icon"></i>
+                        <h3 class="skill--title">CSS</h3>
+                        <p class="skill--description">Creo diseños responsive con Flexbox y Grid, ajustando elementos a pantallas y garantizando buena visualización.</p>
+                    </div>
+                    <div class="skills__container__skill skill">
+                        <i class="fa-brands fa-js skill--icon js"></i>
+                        <h3 class="skill--title">JavaScript</h3>
+                        <p class="skill--description">Manipulo el DOM y utilizo programación básica en JavaScript, como ciclos, bifurcaciones y funciones, para agregar interactividad a las páginas web.</p>
+                    </div>
+                    <div class="skills__container__skill skill">
+                        <i class="fa-brands fa-python skill--icon python"></i>
+                        <h3 class="skill--title">Python</h3>
+                        <p class="skill--description">Desarrollo con lógica limpia y orientada a objetos, asegurando un código modular, reutilizable y fácil de mantener.</p>
+                    </div>
+                    <div class="skills__container__skill skill">
+                        <i class='bx bxl-django skill--icon django'></i>
+                        <h3 class="skill--title">Django</h3>
+                        <p class="skill--description">En Django, creo bases de datos, autentico usuarios y gestiono carritos de compras. También manejo formularios y tablas.</p>
+                    </div>
+                    <div class="skills__container__skill skill">
+                        <i class="fas fa-database skill--icon"></i>
+                        <h3 class="skill--title">Mysql</h3>
+                        <p class="skill--description">En MySQL, creo y elimino bases de datos, y gestiono tablas mediante selección, edición, eliminación y búsqueda de elementos.</p>
+                    </div>
+                    <div class="skills__container__skill skill">
+                        <i class="fa-brands fa-git-alt skill--icon git"></i>
+                        <h3 class="skill--title">Git</h3>
+                        <p class="skill--description">Gestiono versiones de código de forma eficiente, permitiendo llevar un control claro de cambios y colaboraciones.</p>
+                    </div>
+                    <div class="skills__container__skill skill">
+                        <i class="fa-brands fa-github skill--icon github"></i>
+                        <h3 class="skill--title">GitHub</h3>
+                        <p class="skill--description">Administro repositorios remotos, publicando y actualizando proyectos de manera organizada y colaborativa.</p>
+                    </div>
+                    <div class="skills__container__skill skill">
+                        <i class="fa-brands fa-bootstrap boostrap"></i>
+                        <h3 class="skill--title">Boostrap</h3>
+                        <p class="skill--description">Utilizo Bootstrap para estructurar interfaces de forma rápida. Aplico clases para diseño, tipografía y mensajes del sistema.</p>
+                    </div>
+                    
+                </section>
+                <section class="main__skills__footer complementary__skills">
+                    <div class="complementary__skills__title">
+                        <h2 class="complemetary__skills__title--title">Habilidades complementarias</h2>
+                    </div>
+                    <div class="complementary__skills__container">
+                        <ul class="complemetary__skills__container__ul">
+                            <li class="complemetary__skills__container__ul__li">
+                                <h3 class="complemetary__skills__container__ul__li--title">
+                                    Autodidacta y en constante aprendizaje.
+                                </h3>
+                                <p class="complemetary__skills__container__ul__li--text">
+                                    Me capacito por cuenta propia, buscando recursos, practicando a diario y enfrentando nuevos desafíos con curiosidad y compromiso.
+                                    Me adapto rápido a nuevas tecnologías.
+                                </p>
+                            </li>
+                            <li class="complemetary__skills__container__ul__li">
+                                <h3 class="complemetary__skills__container__ul__li--title">
+                                    Buena capacidad para resolver problemas.
+                                </h3>
+                                <p class="complemetary__skills__container__ul__li--text">
+                                    Cuando algo falla, analizo el contexto, pienso en posibles causas y pruebo soluciones lógicas hasta dar con la correcta, sin depender siempre de ayuda externa.
+                                    Me gusta entender el “por qué”.
+                                </p>
+                            </li>
+                            <li class="complemetary__skills__container__ul__li">
+                                <h3 class="complemetary__skills__container__ul__li--title">
+                                    Comprometido con el código limpio y funcional.
+                                </h3>
+                                <p class="complemetary__skills__container__ul__li--text">
+                                    Cuido los nombres de variables, estructuras, comentarios y la lógica general para que el código sea entendible y escalable por mí o por otros.
+                                    Busco claridad ante todo.
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+
+            </div>  
+        </main>
+</body>
+<script src="js/index.js"></script>
+<script src="https://kit.fontawesome.com/c41be49bc5.js" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+</html>
