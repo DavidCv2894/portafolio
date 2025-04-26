@@ -1,4 +1,4 @@
-
+@import url('animations.css');
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Monoton&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 :root {
@@ -85,6 +85,8 @@ header{
             font-size: clamp(3rem, 5vw, 4rem);
             color: var(--blue-200);
             text-shadow: 0 0 5px var(--blue-300);
+            text-decoration: none;
+            
             @media (max-width:720px){
                 font-size: 2.5rem;
             }
@@ -111,7 +113,7 @@ header{
         }
         .nav__list{
             display: flex;
-            gap: 4rem;
+            gap: 3rem;
             list-style: none;
             padding: 0.5rem;
             @media(max-width:991px){
@@ -120,12 +122,27 @@ header{
 
             .nav__list__li{
                 display: flex;
+                position: relative;
+                &:hover{
+                    
+                    &::after{
+                        content: '';
+                        position: absolute;
+                        border: 1px solid var(--blue-100);
+                        bottom: -0.5rem;
+                        animation: underline 0.2s forwards;
+                        
+                    }
+                    
+                }
+                
                 @media(max-width:991px){
                     margin-top: 2rem;
                     padding: 1rem;
                     width: 100%;
                     justify-content: flex-start;
                     border-bottom: 0.5px solid var(--blue-100);
+                    
                 }
                 .nav__list__li--link{
                     color: var(--blue-100);
@@ -133,7 +150,7 @@ header{
                     display: flex;
                     gap: 0.5rem;
                     font-weight: 600;
-                    font-size: 1.4rem;
+                    font-size: 1.3rem;
                     transition: transform 0.3s;
                     @media(max-width:991px){
                         font-size: 1.5rem;
@@ -200,6 +217,8 @@ main{
     width: 95%;
     gap: 1rem;
     height: 100%;
+    border-bottom: 1px solid var(--blue-50);
+    padding-bottom: 10rem;
     @media(max-width:991px){
         flex-direction: column;
         gap:5rem;
@@ -369,11 +388,13 @@ main{
     align-items: center;
     gap: 5rem;
     width: 100%;
+    border-bottom: 1px solid var(--blue-100);
+    padding-bottom: 10rem;
     .main__skills__header{
         font-size: 1.5rem;
         margin-bottom: 3rem;
         text-shadow: 0 0 5px var(--blue-400),
-                     0 0 10px var(--blue-700)    ;
+                     0 0 10px var(--blue-700);
     }
     .main__skills__body{
         display: grid;
@@ -475,6 +496,123 @@ main{
     }
 
 
+   }
+
+   /* PROJECTS CONTAINER */
+   .main__projects{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 3rem;
+    width: 100%;
+    padding: 1rem;
+    color: var(--blue-100);
+    .main__projects--title{
+        text-shadow: 0 0 5px var(--blue-500),
+                     0 0 5px var(--blue-500);
+    }         
+    .main__projects__container{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: 0 auto;
+        gap: 1rem;
+        .project{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 30rem;
+            width: 100%;
+            height: 50rem;
+            border: 1px solid var(--blue-100);
+            border-radius: 1rem;
+            padding: 1rem;
+            gap: 1rem;
+            @media(max-width:530px){
+                height: 55rem;
+            }
+            &:hover{
+                transform: scale(1.01);
+                background: var(--blue-100);
+                color: var(--blue-600);
+                box-shadow: 0 0 15px var(--blue-100);
+                transition: transform 0.3s;
+            }
+            .project--img{
+                width: 100%;
+                height: 15rem;
+                object-fit: scale-down;
+            }
+            .project__date{
+                margin-top: auto;
+                margin-right: auto;
+            }
+            .project__tools{
+                display: flex;
+                flex-direction: column;
+                gap: 1.5rem;
+                width: 100%;
+                align-items: flex-start;
+                .project__tools__ul{
+                    list-style: none;
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: 1rem;
+                    margin-left: 0.5rem;
+                    .project__tools__ul__li .project__tools__ul__li--tool{
+                        display: flex;
+                        align-items: center;
+                        width: 100%;
+                        gap: 1rem;
+                        font-size: 1rem;
+                        font-weight: 600;
+                        .tool--icon{
+                            font-size: 1.5rem;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            background: var(--blue-50);
+                            width: 0.9rem;
+                            height: 0.9rem;
+
+                        }
+                        .html{
+                            color: orangered;
+                        }
+                        .css{
+                            color: var(--blue-600);
+                        }
+                        .js{
+                            color: yellow;
+                            width: 1rem;
+                            height: 1rem;
+                            background: black;
+                        }
+                        .python{
+                            width: 1.5rem;
+                            height: 1.5rem;
+                            background-color:#306998 ;
+                            color:white ;
+                            border-radius: 0.5rem;
+                        }
+                        .django{
+                            color: rgb(37, 154, 37);
+                            background: none;
+                        }
+                        .mysql{
+                            background: none;
+                            color: var(--blue-500);
+                        }
+                        .boostrap{
+                            color: #6f42c1;
+                        }
+                    }
+                }
+            }
+            
+        }
+    }       
    }
   
 }
