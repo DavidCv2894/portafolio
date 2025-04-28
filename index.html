@@ -22,7 +22,7 @@
                     <a href="#skills" class="nav__list__li--link"><i class="fa-solid fa-screwdriver-wrench"></i> Habilidades</a>
                 </li>
                 <li class="nav__list__li">
-                    <a href="#" class="nav__list__li--link"><i class="fa-solid fa-folder"></i>Proyectos</a>
+                    <a href="#projects" class="nav__list__li--link"><i class="fa-solid fa-folder"></i>Proyectos</a>
                 </li>
                 <li class="nav__list__li">
                     <a href="#" class="nav__list__li--link"><i class="fa-solid fa-envelope"></i>Contacto</a>
@@ -41,25 +41,17 @@
                     <i class="fa-brands fa-whatsapp icons"></i>
                     <i class="fa-brands fa-x-twitter icons"></i>
                 </div>
-                <a href="#" class="main__intro__titles--button">Descargar Cv</a>
+                <a href="#" class="main__intro__titles--button">Descargar Cv <i class="fa-solid fa-address-card"></i></a>
                 </section>
                 <section class="main__intro__info">
                     <h1>Sobre mi</h1>
                     <p>
-                        ¡Hola! Soy un programador backend de 31 años, especializado en Python y Django.
-                        Aunque mi enfoque está en el desarrollo backend, también cuento con los conocimientos de frontend necesarios para construir interfaces modernas, funcionales y completamente responsive, utilizando HTML, CSS y JavaScript. 
+                        Soy un programador backend de 31 años, especializado en Python y Django.
+                        También manejo las tecnologías de frontend necesarias para construir interfaces modernas, funcionales y responsive usando HTML, CSS y JavaScript.
                     </p>
-                    <p>Me dedico a desarrollar aplicaciones web funcionales, seguras y escalables. Entre mis proyectos más destacados se encuentran sistemas de e-commerce con autenticación de usuarios, carritos de compras y paneles de administración personalizados.</p>
-                    <p class="main__intro__info--p" >
-                        Trabajo con bases de datos MySQL y domino operaciones clave como creación, edición, eliminación y mantenimiento de tablas y datos.
-                    </p>
-                    <p class="main__intro__info--p">
-                        Cuento con un título terciario en Análisis de Sistemas con orientación a empresas (Facundo D. Zuviría), y certificados en Reparación de PC y Secretariado Nivel Medio (Fundación Roberto Romero). 
-                    </p>
-                    <p class="main__intro__info--p">
-                        Me apasiona seguir aprendiendo, crear soluciones útiles y enfrentar nuevos desafíos en el mundo del desarrollo web.
-                    </p>
-                    <button class="main__intro__info--button" id="button__text">Ver mas</button>
+                    <div class="main__intro__info--data data">
+                        <img src="img/contact.png" alt="">
+                    </div>
                 </section>
             </div>
 
@@ -161,9 +153,9 @@
                         <div class="main__projects__container--project project">
                             <img src="img/vlerma.jpg" alt="jml" class="project--img">
                             <h2 class="project--title">Vlerma</h2>
-                            <p class="project--description">Sistema de e-commerce enfocado en la simulación de compras, permitiendo a los usuarios registrarse, iniciar sesión y gestionar sus propios perfiles. La plataforma ofrece un catálogo organizado donde los usuarios pueden agregar productos a su carrito y realizar simulacros de compra, generando un historial detallado de todas las operaciones realizadas.</p>
+                            <p class="project--description">Sistema de e-commerce que permite a los usuarios registrarse, iniciar sesión y gestionar su perfil. Los usuarios pueden agregar productos al carrito, simular compras y consultar un historial detallado de sus operaciones.</p>
                             <div class="project__tools">
-                                <h3 class="project__tools--title">Herramientas</h3>
+                                
                                 <ul class="project__tools__ul ">
                                     <li class="project__tools__ul__li">
                                         <p class="project__tools__ul__li--tool"><i class="fa-brands fa-html5 tool--icon html"></i>Html</p>
@@ -188,15 +180,17 @@
                                     </li>
                                 </ul>
                             </div>
+                            <a href="#" class="project__button"><i class="fa-solid fa-eye"></i> Ver pagina del proyecto</a>
+                            <a href="#" class="project__button"><i class="fa-brands fa-github"></i> Ver Repositorio</a>
                             <h5 class="project__date">Fecha de Creación: 23/03/2025</h5>
                             
                         </div>
                         <div class="main__projects__container--project project">
                             <img src="img/jml.jpg" alt="jml" class="project--img">
                             <h2 class="project--title">Jml Salta</h2>
-                            <p class="project--description">Sitio web dedicado a la exposición de productos para bomberos y servicios de protección contra incendios. La plataforma brinda a los usuarios un acceso sencillo a un catálogo de artículos con precios actualizados, permitiéndoles informarse de manera rápida y clara. Además, cada producto cuenta con una sección de comentarios para fomentar la interacción, sin necesidad de registrarse o iniciar sesión. El enfoque principal del proyecto es ofrecer información precisa y accesible en un entorno organizado y fácil de navegar.</p>
+                            <p class="project--description">Sitio web de productos para bomberos y protección contra incendios, con precios y detalles actualizados. Incluye sección de comentarios en cada artículo, accesible sin registro.</p>
                             <div class="project__tools">
-                                <h3 class="project__tools--title">Herramientas</h3>
+                                
                                 <ul class="project__tools__ul ">
                                     <li class="project__tools__ul__li">
                                         <p class="project__tools__ul__li--tool"><i class="fa-brands fa-html5 tool--icon html"></i>Html</p>
@@ -218,6 +212,8 @@
                                     </li>
                                 </ul>
                             </div>
+                            <a href="#" class="project__button"><i class="fa-solid fa-eye"></i> Ver pagina del proyecto</a>
+                            <a href="#" class="project__button"><i class="fa-brands fa-github"></i> Ver Repositorio</a>
                             <h5 class="project__date">Fecha de Creación: 05/02/2025</h5>
                             
                         </div>
@@ -225,9 +221,9 @@
                         <div class="main__projects__container--project project">
                             <img src="img/freespace.jpg" alt="jml" class="project--img">
                             <h2 class="project--title">FreeSpace</h2>
-                            <p class="project--description">Freespace es una red social moderna que permite a los usuarios interactuar mediante publicaciones y personalizar su perfil. Los usuarios pueden actualizar su nombre y foto de perfil, creando un entorno único y dinámico. Este proyecto fue el primer acercamiento del usuario a plataformas interactivas, con un enfoque en la gestión de usuarios y la personalización de cuentas para ofrecer una experiencia fluida y atractiva.</p>
+                            <p class="project--description">Freespace es una red social moderna que permite a los usuarios interactuar mediante publicaciones y personalizar su perfil. Los usuarios pueden actualizar su nombre y foto de perfil, creando un entorno único y dinámico.</p>
                             <div class="project__tools">
-                                <h3 class="project__tools--title">Herramientas</h3>
+                                
                                 <ul class="project__tools__ul ">
                                     <li class="project__tools__ul__li">
                                         <p class="project__tools__ul__li--tool"><i class="fa-brands fa-html5 tool--icon html"></i>Html</p>
@@ -249,6 +245,8 @@
                                     </li>
                                 </ul>
                             </div>
+                            <a href="#" class="project__button"><i class="fa-solid fa-eye"></i> Ver pagina del proyecto</a>
+                            <a href="#" class="project__button"><i class="fa-brands fa-github"></i> Ver Repositorio</a>
                             <h5 class="project__date">Fecha de Creación: 11/12/2023</h5>
                         </div>
                     </section>

@@ -15,21 +15,7 @@ nav__list_movil__link.forEach(link => {
     })
 });
 
-///// Ver Mas Button /////
-let text = document.querySelectorAll('.main__intro__info--p');
-const button__text = document.querySelector('#button__text');
-button__text.addEventListener('click', ()=>{
-    text.forEach(element => {
-        element.classList.toggle('main__intro__info--p--mostrar');
-        
-    });
-    if (button__text.innerHTML == 'Ver mas') {
-        button__text.innerHTML='Ver menos';
-     }
-     else{
-         button__text.innerHTML='Ver mas';
-     }
-});
+
 
 
 
